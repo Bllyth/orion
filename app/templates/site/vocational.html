@@ -1,0 +1,92 @@
+{% extends 'site/layout/base.html' %}
+
+{% block content %}
+
+    <!-- Breadcrumb Area -->
+
+    <div class="breadcrumb-area bread-bg-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-title text-center">
+                        <h1>Vocational Training</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Single Cause Area  -->
+
+    <div class="causes-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 offset-xl-2">
+                    <div class="cause-details">
+                        <div class="case-2-img">
+                            <img src="{{ url_for('static', filename='site/images/farm-2.jpg') }}" alt="">
+                        </div>
+
+                        <div class="case-2-texts bg-light-white mt-5">
+
+
+                            <p>
+                                We have a farm of 4 acres where we train and empower our students on horticultural
+                                farming. It supplies food for our Centre and income to run programs by selling produce
+                                to the local community. Most importantly, it provides vocational training, employment
+                                and income for our students who enabling them to be more independent and to contribute
+                                to the community at large.
+                            </p>
+                            <br>
+                            <p>
+                                The training program starts when they are 16 years old and continues for 2 years. Once
+                                they are 18 years of age, we evaluate their ability to perform farming tasks and if they
+                                are able, we employ them to work as farmers in our farm. We prepare job contracts for
+                                them and open bank accounts into which their salary is paid.
+                            </p>
+                            <br>
+                            <p>
+                                It is important to note that the families wanted the money paid to them directly. The
+                                seemingly simple act of students/workers having a bank account in their name with the
+                                Centre as a custodian not only empowers the students/workers, helps them to learn an
+                                important life skill of managing money, but also helps to change the paradigm in which
+                                those with developmental disabilities are seen as a burden and non-contributing members
+                                of society.
+                            </p>
+                            <br>
+
+                        </div>
+                        <div class="project-slider-wrap">
+                            <div class="project-slider owl-carousel owl-theme">
+                                <div class="single-project-item">
+                                    <img src="{{ url_for('static', filename='site/images/farm-1.jpg') }}" alt="">
+                                </div>
+
+                                <div class="single-project-item">
+                                    <img src="{{ url_for('static', filename='site/images/farm-3.jpg') }}" alt="">
+                                </div>
+                                <div class="single-project-item">
+                                    <img src="{{ url_for('static', filename='site/images/farm-4.jpg') }}" alt="">
+                                </div>
+                                <div class="single-project-item">
+                                    <img src="{{ url_for('static', filename='site/images/farm-5.jpg') }}" alt="">
+                                </div>
+                                <div class="single-project-item">
+                                    <img src="{{ url_for('static', filename='site/images/farm-1.jpg') }}" alt="">
+                                </div>
+                                <div class="single-project-item">
+                                    <img src="{{ url_for('static', filename='site/images/farm-6.jpg') }}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}

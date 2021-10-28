@@ -1,0 +1,41 @@
+# Spanish translations for PROJECT.
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2020-05-23 05:09+0300\n"
+"PO-Revision-Date: 2020-05-23 05:10+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: app/templates/site/index.html:14
+msgid "For Children with Intellectual Disabilities"
+msgstr ""
+
+#: app/templates/site/index.html:35
+msgid "About Us"
+msgstr ""
+
+#: app/templates/site/index.html:39
+msgid ""
+"The Orione Community Training Centre (OCTC) Kenya was founded in 2005 and"
+" has evolved over\n"
+"                            the last 14 years into a symbol of inclusion "
+"for the children and youth with intellectual\n"
+"                            disabilities who are usually treated as a "
+"“stigma” by the Kenyan society. The center has\n"
+"                            promoted and provided a reason to give them "
+"relevance, hope and potential value to their\n"
+"                            community."
+msgstr ""
+

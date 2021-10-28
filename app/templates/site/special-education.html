@@ -1,0 +1,94 @@
+{% extends 'site/layout/base.html' %}
+
+{% block content %}
+
+    <!-- Breadcrumb Area -->
+
+    <div class="breadcrumb-area bread-bg-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-title text-center">
+                        <h1>Education</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Single Cause Area  -->
+
+    <div class="causes-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 offset-xl-2">
+                    <div class="cause-details">
+                        <div class="case-2-img">
+                            <img src="{{ url_for('static', filename='site/images/ed-4.jpg') }}" alt="">
+                        </div>
+
+                        <div class="case-2-texts bg-light-white mt-5">
+
+
+                            <p>
+                                We have established two Centres in Kenya to provide a range of services needed by the
+                                community and have been awarded Certificates of Registration for Basic Education
+                                Institution under the Ministry of Education. To meet the educational needs of our
+                                students we have:
+                            </p>
+                            <br>
+                            <h3 class="slab">Special education</h3>
+                            <p>
+                                Special educational program with Individualized educational plan (IEP) to meet the
+                                students’ needs based on the student’s development rather than predetermined
+                                expectations based on grade level in a non-restrictive environment
+                            </p>
+                            <br>
+                            <h3 class="slab">Feeding program</h3>
+                            <p>
+                                Provision of two meals per day includes breakfast and lunch to each of our students.
+                                This is to ensure that they have adequate nutrition and are able attend classroom
+                                activities. In addition, those who suffer or are at risk of malnourishment are given an
+                                additional peanut butter supplement.
+                            </p>
+                            <br>
+                            <h3 class="slab">Transportation</h3>
+                            <p>
+                                We facilitate the school attendance of our special students by offering bus service that
+                                collects them at various stops in the morning and drops them off in the afternoon.
+                                Students come from far away and have scant resources for other means of transportation.
+                                In addition, many have developmental deficits or conditions (i.e. cerebral palsy) that
+                                prevent them walking to the Centre.
+                            </p>
+
+                        </div>
+                        <div class="project-slider-wrap">
+                            <div class="project-slider owl-carousel owl-theme">
+                                <div class="single-project-item">
+                                    <img src="{{ url_for('static', filename='site/images/ed-1.jpg') }}" alt="">
+                                </div>
+                                <div class="single-project-item">
+                                    <img src="{{ url_for('static', filename='site/images/ed-2.jpg') }}" alt="">
+                                </div>
+                                <div class="single-project-item">
+                                    <img src="{{ url_for('static', filename='site/images/ed-3.jpg') }}" alt="">
+                                </div>
+                                <div class="single-project-item">
+                                    <img src="{{ url_for('static', filename='site/images/ed-4.jpg') }}" alt="">
+                                </div>
+                                <div class="single-project-item">
+                                    <img src="{{ url_for('static', filename='site/images/ed-5.jpg') }}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}

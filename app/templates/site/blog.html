@@ -1,0 +1,212 @@
+{% extends 'site/layout/base.html' %}
+
+{% block content %}
+
+    <!-- Breadcrumb Area -->
+
+    <div class="breadcrumb-area bread-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-title text-center">
+                        <h1>Our Articles</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Area-->
+
+    <div class="blog-area mar-top-50 section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mar-bt-50">
+                    <div class="single-blog-item">
+                        <div class="blog-bg">
+                            <img src="{{ url_for('static', filename='site/images/disability-day.jpeg') }}" alt="">
+                            <div class="blog-content">
+                                {# <p class="blog-meta">Posted by <b>Admin</b> on Mar 30, 2020</p>#}
+                                <h5>
+                                    <a href="{{ url_for('main.blog_disability_day') }}">
+                                        International Day of Persons with Disabilities 2020
+                                    </a>
+                                </h5>
+                                <p>
+                                    Following the signing of the M.O.U with the County Government of Kajiado, we
+                                    embarked on implementing the joint emergency...
+                                    This year, our Centre was selected to host the main Kajiado County Celebrations to
+                                    mark the International Day for Persons Living with Disabilities...
+                                </p>
+                                <a href="{{ url_for('main.blog_disability_day') }}" class="read-more">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mar-bt-50">
+                    <div class="single-blog-item">
+                        <div class="blog-bg">
+                            <img src="{{ url_for('static', filename='site/images/joint-emergency.png') }}" alt="">
+                            <div class="blog-content">
+                                {# <p class="blog-meta">Posted by <b>Admin</b> on Mar 30, 2020</p>#}
+                                <h5>
+                                    <a href="{{ url_for('main.blog_emergency_intervention') }}">
+                                        Implementation of Joint Emergency Intervention Plan
+                                    </a>
+                                </h5>
+                                <p>
+                                    Following the signing of the M.O.U with the County Government of Kajiado, we
+                                    embarked on
+                                    implementing the joint emergency...
+                                </p>
+                                <a href="{{ url_for('main.blog_emergency_intervention') }}" class="read-more">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mar-bt-50">
+                    <div class="single-blog-item">
+                        <div class="blog-bg">
+                            <img src="{{ url_for('static', filename='site/images/mou-signing.jpg') }}" alt="">
+                            <div class="blog-content">
+                                {# <p class="blog-meta">Posted by <b>Admin</b> on Mar 30, 2020</p>#}
+                                <h5><a href="{{ url_for('main.blog_mou') }}">MOU signing /COVID -19 RESPONSES –
+                                    Joint emergency intervention for students with mental conditions and syndromes</a>
+                                </h5>
+                                <p>
+                                    On the 11 th of August 2020, Don Orione Centre and the County Government of Kajiado
+                                    entered into a Memorandum of...
+
+                                </p>
+                                <a href="{{ url_for('main.blog_mou') }}" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mar-bt-50">
+
+                    <div class="single-blog-item">
+                        <div class="blog-bg">
+                            <img src="{{ url_for('static', filename='site/images/ongoing.jpg') }}" alt="">
+                            <div class="blog-content">
+                                {# <p class="blog-meta">Posted by <b>Admin</b> on Mar 30, 2020</p>#}
+                                <h5><a href="{{ url_for('main.blog_ongoing') }}">Ongoing Project - Constructon of
+                                    ablution
+                                    block</a></h5>
+                                <p>
+                                    We are currently implementing a project funded by Manos Unidas Foundation from
+                                    Spain to improve our hygiene and...
+                                </p>
+                                <a href="{{ url_for('main.blog_ongoing') }}" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mar-bt-50">
+                    <div class="single-blog-item">
+                        <div class="blog-bg">
+                            <img src="{{ url_for('static', filename='site/images/anniversary.jpg') }}" alt="">
+                            <div class="blog-content">
+                                {# <p class="blog-meta">Posted by <b>Admin</b> on Mar 30, 2020</p>#}
+                                <h5><a href="{{ url_for('main.blog_anniversary') }}">Our 5th Anniversary and Courtesy
+                                    Visit
+                                    by
+                                    Hon. Martin Moshisho Martine, Deputy Governor ,Kajiado County</a></h5>
+                                <p>On the 10th of July 2020, our institution both in Kandisi celebrated its 5th
+                                    Anniversary since its opening where....</p>
+                                <a href="{{ url_for('main.blog_anniversary') }}" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mar-bt-50">
+                    <div class="single-blog-item">
+                        <div class="blog-bg">
+                            <img src="{{ url_for('static', filename='site/images/lenku.jpg') }}" alt="">
+                            <div class="blog-content">
+                                {# <p class="blog-meta">Posted by <b>Admin</b> on Mar 30, 2020</p>#}
+                                <h5><a href="{{ url_for('main.blog_lenku') }}">Courtesy Visit by Hon. Joseph Ole Lenku
+                                    , Governor ,Kajiado County</a></h5>
+                                <p>On the 28 th of May 2020 we received Hon. Joseph Ole Lenku , our Governor -Kajaido
+                                    County and his delegation who....</p>
+                                <a href="{{ url_for('main.blog_lenku') }}" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mar-bt-50">
+                    <div class="single-blog-item">
+                        <div class="blog-bg">
+                            <img src="{{ url_for('static', filename='site/images/covid-bg.jpg') }}" alt="">
+                            <div class="blog-content">
+                                {# <p class="blog-meta">Posted by <b>Admin</b> on Mar 30, 2020</p>#}
+                                <h5><a href="{{ url_for('main.blog_details') }}">OCTC Kenya response to COVID-19
+                                    pandemic</a></h5>
+                                <p>Since the 13 th of March 2020, when the Government of Kenya announced the first
+                                    positive case of Covid -19...</p>
+                                <a href="{{ url_for('main.blog_details') }}" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mar-bt-50">
+                    <div class="single-blog-item">
+                        <div class="blog-bg">
+                            <img src="{{ url_for('static', filename='site/images/feeding.jpg') }}" alt="">
+                            <div class="blog-content">
+                                {# <p class="blog-meta">Posted by <b>Admin</b> on Mar 30, 2020</p>#}
+                                <h5><a href="{{ url_for('main.blog_feeding') }}">Feeding The future</a></h5>
+                                <p>COVID 19 has presented unprecedented challenges to all of us and therefore calling
+                                    for immediate and spontaneous...</p>
+                                <a href="{{ url_for('main.blog_feeding') }}" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mar-bt-50">
+                    <div class="single-blog-item">
+                        <div class="blog-bg">
+                            <img src="{{ url_for('static', filename='site/images/disability-expo.jpg') }}" alt="">
+                            <div class="blog-content">
+                                {# <p class="blog-meta">Posted by <b>Admin</b> on Mar 30, 2020</p>#}
+                                <h5><a href="{{ url_for('main.blog_disability_expo') }}">Disability Expo 2019</a></h5>
+                                <p>On the 10 th of July 2019 we had our 4th Anniversary celebrations since the opening
+                                    of our Centre in Kandisi...</p>
+                                <a href="{{ url_for('main.blog_disability_expo') }}" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mar-bt-50">
+                    <div class="single-blog-item">
+                        <div class="blog-bg">
+                            <img src="{{ url_for('static', filename='site/images/graduation-4.jpg') }}" alt="">
+                            <div class="blog-content">
+                                {# <p class="blog-meta">Posted by <b>Admin</b> on Mar 30, 2020</p>#}
+                                <h5><a href="{{ url_for('main.blog_graduation') }}">Graduation ceremony 2018</a></h5>
+                                <p>On Tuesday, 6th November 2018 we one of the most important and significant event in
+                                    the life of our Centre here...<</p>
+                                <a href="{{ url_for('main.blog_graduation') }}" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6 text-center">
+                    <a href="#" class="main-btn">Load More</a>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

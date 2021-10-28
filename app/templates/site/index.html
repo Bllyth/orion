@@ -1,0 +1,383 @@
+{% extends 'site/layout/base.html' %}
+
+{% block content %}
+
+    <!-- Hero Area -->
+
+    <div class="home-panel">
+        <div class="home-slides">
+
+            <div class="homepage-slides owl-carousel">
+                <div class="single-slide-item">
+                    <img class="image-bg" src="{{ url_for('static', filename='site/images/home-bg-3.jpg') }}">
+                    <div class="hero-area-content">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-12 text-center wow fadeInUp animated" data-wow-delay=".2s">
+                                    <div class="section-title">
+                                        <h1>The Orione Community Training Centre</h1>
+                                        <h4><b>For Children with Intellectual Disabilities</b></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-slide-item">
+                    <img class="image-bg" src="{{ url_for('static', filename='site/images/home-bg-11.jpg') }}">
+                    <div class="hero-area-content">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-12 text-center">
+                                    <div class="section-title">
+                                        <h1>The Orione Community Training Centre</h1>
+                                        <h4><b>For Children with Intellectual Disabilities</b></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-slide-item">
+                    <img class="image-bg" src="{{ url_for('static', filename='site/images/home-bg.jpg') }}">
+                    <div class="hero-area-content">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-12 text-center">
+                                    <div class="section-title">
+                                        <h1>The Orione Community Training Centre</h1>
+                                        <h4><b>For Children with Intellectual Disabilities</b></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="promo-pannel"><a class="anchor promo-pannel__anchor" href="#about"> <span>Scroll Down</span></a>
+{#            <div class="promo-pannel__video"><img class="img--bg" src="img/video_block.jpg" alt="image"><a class="video-trigger" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><span>Watch our video</span><i class="fa fa-play" aria-hidden="true"></i></a></div>#}
+            <div class="promo-pannel__phones">
+                <p class="promo-pannel__title">Phone number</p><a class="promo-pannel__link" href="tel:+254793752250">+254 793 752 250</a>
+            </div>
+            <div class="promo-pannel__email">
+                <p class="promo-pannel__title">Email</p><a class="promo-pannel__link" href="mailto:info@orionekenya.org">info@orionekenya.org</a>
+            </div>
+        </div>
+    </div>
+
+    {#    <div class="crop-height">#}
+    {#        <img src="{{ url_for('static', filename='site/images/home-bg.jpg') }}" alt="" class="scale">#}
+    {#    </div>#}
+
+    {#    <div class="hero-area">#}
+    {#        <div class="hero-area-content text-center">#}
+    {#            <div class="container">#}
+    {#                <div class="row">#}
+    {#                    <div class="col-lg-12 wow fadeInUp animated" data-wow-delay=".3s">#}
+    {#                        <h1>The Orione Community Training Centre</h1>#}
+    {##}
+    {#                        <h6>{{ _('For Children with Intellectual Disabilities') }}</h6>#}
+    {#                    </div>#}
+    {#                </div>#}
+    {#            </div>#}
+    {#        </div>#}
+    {#    </div>#}
+
+    <!-- About Area-->
+
+    <div  id="about" class="about-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+{#                    <iframe width="500" height="309" src="https://www.youtube.com/embed/f88-JCD1vQw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>#}
+
+                                        <div class="about-left">
+                                            <img class="lazy-image loaded" src="{{ url_for('static', filename='site/images/about-bg.jpg') }}"
+                                                 alt="">
+                                        </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <div class="section-title">
+                            <h2>{{ _('About <b>Us</b>') }}</h2>
+                        </div>
+
+                        <p>
+                            {{ _('The Orione Community Training Centre (OCTC) Kenya was founded in 2005 and has evolved over
+                            the last 14 years into a symbol of inclusion for the children and youth with intellectual
+                            disabilities who are usually treated as a “stigma” by the Kenyan society. The center has
+                            promoted and provided a reason to give them relevance, hope and potential value to their
+                            community.') }}
+                        </p>
+
+                        {#                        <a href="#" class="main-btn">Discover More</a>#}
+                    </div>
+                </div>
+            </div>
+            {#            <div class="text-center mt-5">#}
+            {#                 <iframe width="850" height="609" src="https://www.youtube.com/embed/f88-JCD1vQw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>#}
+            {#            </div>#}
+        </div>
+    </div>
+    <!-- Process Area -->
+
+    <div class="process-area gray-bg">
+        <div class="activities-wrapper">
+
+            <div class="row">
+                <div class="col-lg-12 text-center ">
+                    <div class="section-title">
+                        <h2>Our <b>Activities</b></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="single-service-item">
+                            <a href="{{ url_for('main.special_education') }}">
+                                <img src="{{ url_for('static', filename='site/images/ed-2.jpg') }}" alt="">
+                            </a>
+
+                            <a href="{{ url_for('main.special_education') }}">
+                                <h5>Special Education</h5>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="single-service-item">
+                            <a href="{{ url_for('main.rehab') }}">
+                                <img src="{{ url_for('static', filename='site/images/rehab-1.jpg') }}" alt="">
+                            </a>
+                            <a href="{{ url_for('main.rehab') }}">
+                                <h5>Rehabilitation / Therapy</h5>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="single-service-item">
+                            <a href="{{ url_for('main.vocational') }}">
+                                <img src="{{ url_for('static', filename='site/images/vocational.jpg') }}" alt="">
+                            </a>
+                            <a href="{{ url_for('main.vocational') }}">
+                                <h5>Vocational Training</h5>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="single-service-item">
+                            <a href="{{ url_for('main.community') }}">
+                                <img src="{{ url_for('static', filename='site/images/community.jpg') }}" alt="">
+                            </a>
+                            <a href="{{ url_for('main.community') }}">
+                                <h5>Community Inclusion</h5>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Blog Area-->
+
+	<div class="blog-area gray-bg theme-2 section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<div class="section-title">
+						<h2>Latest <b>Articles</b></h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+					<a href="{{ url_for('main.blog_disability_day') }}" class="single-blog-item">
+						<div class="blog-bg">
+							 <img src="{{ url_for('static', filename='site/images/disability-day.jpeg') }}" alt="">
+						</div>
+						<div class="blog-content">
+							<p class="blog-date">3 December 2020</p>
+							<h5>International Day of Persons with Disabilities 2020</h5>
+						</div>
+
+					</a>
+				</div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+					<a href="{{ url_for('main.blog_emergency_intervention') }}" class="single-blog-item">
+						<div class="blog-bg">
+							 <img src="{{ url_for('static', filename='site/images/joint-emergency.png') }}" alt="">
+						</div>
+						<div class="blog-content">
+							<p class="blog-date">7 September 2020</p>
+							<h5>Implementation of Joint Emergency Intervention Plan</h5>
+						</div>
+
+					</a>
+				</div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+					<a href="{{ url_for('main.blog_mou') }}" class="single-blog-item">
+						<div class="blog-bg">
+							 <img src="{{ url_for('static', filename='site/images/mou-signing.jpg') }}" alt="">
+						</div>
+						<div class="blog-content">
+							<p class="blog-date">11 August 2020</p>
+							<h5>Joint emergency intervention for students with mental conditions and syndromes</h5>
+						</div>
+
+					</a>
+				</div>
+
+{#                <div class="col-lg-4 col-md-6 col-sm-12">#}
+{#					<a href="{{ url_for('main.blog_ongoing') }}" class="single-blog-item">#}
+{#						<div class="blog-bg">#}
+{#							 <img src="{{ url_for('static', filename='site/images/ongoing.png') }}" alt="">#}
+{#						</div>#}
+{#						<div class="blog-content">#}
+{#							<p class="blog-date">30 July 2020</p>#}
+{#							<h5>Ongoing Project - Construction of ablution block</h5>#}
+{#						</div>#}
+{##}
+{#					</a>#}
+{#				</div>#}
+
+{#				<div class="col-lg-4 col-md-6 col-sm-12">#}
+{#					<a href="{{ url_for('main.blog_lenku') }}" class="single-blog-item">#}
+{#						<div class="blog-bg">#}
+{#							 <img src="{{ url_for('static', filename='site/images/lenku.jpg') }}" alt="">#}
+{#						</div>#}
+{#						<div class="blog-content">#}
+{#							<p class="blog-date">28 May 2020</p>#}
+{#							<h5>Courtesy Visit by Hon. Joseph Ole Lenku#}
+{#                                    , Governor ,Kajiado County</h5>#}
+{#						</div>#}
+{##}
+{#					</a>#}
+{#				</div>#}
+
+{#                <div class="col-lg-4 col-md-6 col-sm-12">#}
+{#					<a href="{{ url_for('main.blog_feeding') }}" class="single-blog-item">#}
+{#						<div class="blog-bg">#}
+{#							<img src="{{ url_for('static', filename='site/images/feeding.jpg') }}" alt="">#}
+{#						</div>#}
+{#						<div class="blog-content">#}
+{#							<p class="blog-date">13 March 2020</p>#}
+{#							<p class="blog-meta">Posted by <b>Admin</b></p>#}
+{#							<h5>Feeding The future</h5>#}
+{#						</div>#}
+{#					</a>#}
+{#				</div>#}
+
+{#				<div class="col-lg-4 col-md-6 col-sm-12">#}
+{#					<a href="{{ url_for('main.blog_disability_expo') }}" class="single-blog-item">#}
+{#						<div class="blog-bg">#}
+{#							 <img src="{{ url_for('static', filename='site/images/disability-expo.jpg') }}" alt="">#}
+{#						</div>#}
+{#						<div class="blog-content">#}
+{#							<p class="blog-date">10 July 2019</p>#}
+{#							<h5>Disability Expo 2019</h5>#}
+{#						</div>#}
+{##}
+{#					</a>#}
+{#				</div>#}
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+    <!-- Partners Area -->
+
+    {# 	<div class="client-area section-padding padding-top-0">#}
+    {# 		<div class="container">#}
+    {# 			<div class="row">#}
+    {# 				<div class="col-md-12">#}
+    {#                    <div class="section-title text-center mb-5">#}
+    {#						<h2>Our Partners</h2>#}
+    {#					</div>#}
+    {# 					<div class="logo-carousel owl-carousel">#}
+    {# 						<div class="single-logo-wrapper">#}
+    {# 							<div class="logo-inner-item">#}
+    {# 								<img src="{{ url_for('static', filename='site/images/argentina.png') }}" alt="">#}
+    {# 							</div>#}
+    {# 						</div>#}
+    {# 						<div class="single-logo-wrapper">#}
+    {# 							<div class="logo-inner-item">#}
+    {# 								<img src="{{ url_for('static', filename='site/images/catholic-university.jpg') }}" alt="">#}
+    {# 							</div>#}
+    {# 						</div>#}
+    {# 						<div class="single-logo-wrapper">#}
+    {# 							<div class="logo-inner-item">#}
+    {# 								<img src="{{ url_for('static', filename='site/images/chile.png') }}" alt="">#}
+    {# 							</div>#}
+    {# 						</div>#}
+    {# 						<div class="single-logo-wrapper">#}
+    {# 							<div class="logo-inner-item">#}
+    {# 								<img src="{{ url_for('static', filename='site/images/hickey.jpg') }}" alt="">#}
+    {# 							</div>#}
+    {# 						</div>#}
+    {# 						<div class="single-logo-wrapper">#}
+    {# 							<div class="logo-inner-item">#}
+    {# 								<img src="{{ url_for('static', filename='site/images/ireland.jpg') }}" alt="">#}
+    {# 							</div>#}
+    {# 						</div>#}
+    {# 						<div class="single-logo-wrapper">#}
+    {# 							<div class="logo-inner-item">#}
+    {# 								<img src="{{ url_for('static', filename='site/images/slovakia.png') }}" alt="">#}
+    {# 							</div>#}
+    {# 						</div>#}
+    {# 						<div class="single-logo-wrapper">#}
+    {# 							<div class="logo-inner-item">#}
+    {# 								<img src="{{ url_for('static', filename='site/images/strathmore.png') }}" alt="">#}
+    {# 							</div>#}
+    {# 						</div>#}
+    {#                        <div class="single-logo-wrapper">#}
+    {# 							<div class="logo-inner-item">#}
+    {# 								<img src="{{ url_for('static', filename='site/images/jumeirah.png') }}" alt="">#}
+    {# 							</div>#}
+    {# 						</div>#}
+    {# 					</div>#}
+    {# 				</div>#}
+    {# 			</div>#}
+    {# 		</div>#}
+    {# 	</div>#}
+
+
+    {#    <div class="section-padding padding-top-0">#}
+    {#     <div class="container">#}
+    {#        <div class="row">#}
+    {#            <div class="col-12">#}
+    {#                <div class="home-site-info">#}
+    {#                    <p>Contact us</p>#}
+    {#                    <div class="d-flex justify-content-between">#}
+    {##}
+    {#                            <h5> <i class="fa fa-phone"></i> +254 793 752 250</h5>#}
+    {##}
+    {#                            <a href="mailto:info@orionekenya.org"><i class="fa fa-envelope"></i> info@orionekenya.org</a>#}
+    {##}
+    {#                    </div>#}
+    {#                </div>#}
+    {#            </div>#}
+    {#        </div>#}
+    {#     </div>#}
+    {#    </div>#}
+
+
+
+{% endblock %}

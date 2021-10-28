@@ -1,0 +1,101 @@
+{% extends 'site/layout/base.html' %}
+
+{% block content %}
+
+    <!-- Breadcrumb Area -->
+
+    <div class="breadcrumb-area bread-bg-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-title text-center">
+                        <h1>Rehabilitation / Therapy</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Single Cause Area  -->
+
+    <div class="causes-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 offset-xl-2">
+                    <div class="cause-details">
+                        <div class="case-2-img">
+                            <img src="{{ url_for('static', filename='site/images/rehab-1.jpg') }}" alt="">
+                        </div>
+
+                        <div class="case-2-texts bg-light-white mt-5">
+
+
+                            <p>
+                                The range of needs that our students have requires different forms of rehab and
+                                education:
+                            </p>
+                            <br>
+                            <h3 class="slab">Physical rehab</h3>
+                            <p>
+                                Students with walking disabilities, spasticity and delayed developmental milestones
+                                (like sitting) undergo therapy sessions and some of them improve to the point that they
+                                are able to participate to a greater extent in learning activities and day to day living
+                                activities.
+                            </p>
+                            <br>
+                            <h3 class="slab">Occupational therapy</h3>
+                            <p>
+                                Lacking eye and motor coordination, most of our students are unable to perform common
+                                activities of daily living: dressing, toileting, and feeding. This limits their ability
+                                to undertake and participate in learning and life skills. Therefore, we provide them
+                                with occupational therapy sessions to help them acquire and develop the necessary
+                                skills.
+                            </p>
+                            <br>
+                            <h3 class="slab">Sensory stimulation</h3>
+                            <p>
+                                Students especially those with conditions like Autism are hyperactive and have a short
+                                concentration span. These students attend sensory integration sessions in our dark room
+                                outfitted with special materials like changing colours, toys, music, and touch
+                                stimulation objects. The different elements stimulate areas of their brain with damage.
+                                This stimulation has a positive impact on the performance of their daily activities as
+                                it helps them to calm down and improves their concentration and memory retention.
+                            </p>
+                            <br>
+                            <h3 class="slab">Speech therapy</h3>
+                            <p>
+                                This is a new therapeutic area we started in July 2017. We noticed that our young
+                                students (especially those between the ages of 3 and 10 years) undergoing therapy were
+                                making efforts to articulate their first words and to communicate. It is important to
+                                note that speech therapy in Kenya is a relatively new field. A qualified Speech Language
+                                Pathologist from India trained our first Speech therapist. We now have a speech therapy
+                                room that students started using for sessions starting in the month of May 2018.
+                            </p>
+                        </div>
+                        <div class="project-slider-wrap">
+                            <div class="project-slider owl-carousel owl-theme">
+                                <div class="single-project-item">
+                                    <img src="{{ url_for('static', filename='site/images/rehab-1.jpg') }}" alt="">
+                                </div>
+                                <div class="single-project-item">
+                                    <img src="{{ url_for('static', filename='site/images/rehab-2.jpg') }}" alt="">
+                                </div>
+                                <div class="single-project-item">
+                                    <img src="{{ url_for('static', filename='site/images/rehab-3.jpg') }}" alt="">
+                                </div>
+                                <div class="single-project-item">
+                                    <img src="{{ url_for('static', filename='site/images/rehab-4.jpg') }}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}

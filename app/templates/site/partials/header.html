@@ -1,0 +1,293 @@
+
+<!-- Header Area -->
+
+{#<div class="header-area absolate-header theme-2">#}
+{#    <div class="sticky-area">#}
+{#            <div class="container-fluid">#}
+{#            <div class="row no-gutters justify-content-between">#}
+{#                <div class="col-auto d-flex align-items-center">#}
+{#                    <button class="navbar-toggler mt-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">#}
+{#                                <span class="navbar-toggler-icon"></span>#}
+{#                                <span class="navbar-toggler-icon"></span>#}
+{#                                <span class="navbar-toggler-icon"></span>#}
+{#                            </button>#}
+{#                    <div class="logo">#}
+{#                        <a class="navbar-brand" href="{{  url_for('main.index') }}"><img src="{{ url_for('static', filename='site/images/orione.jpg') }}" alt=""></a>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="col-auto">#}
+{#                    <div class="main-menu">#}
+{#                        <nav class="navbar navbar-expand-custom">#}
+{##}
+{##}
+{#                            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">#}
+{#                                <ul class="navbar-nav m-auto">#}
+{#                                    <li class="nav-item">#}
+{#                                        <a class="nav-link" href="{{ url_for('main.index') }}">Home</a>#}
+{#                                    </li>#}
+{#                                    <li class="nav-item">#}
+{#                                        <a class="nav-link" href="#">Who We Are +#}
+{#                                            <span class="sub-nav-toggler"> <i class="fa fa-angle-down"></i>#}
+{# 												</span>#}
+{#                                        </a>#}
+{#                                        <ul class="sub-menu">#}
+{#                                            <li><a href="{{ url_for('main.about') }}">About Us</a></li>#}
+{#                                            <li><a href="{{ url_for('main.founder') }}">Our Founder</a></li>#}
+{#                                            <li><a href="{{ url_for('main.board') }}">Advisory Board</a></li>#}
+{#                                            <li><a href="{{ url_for('main.faq') }}">FAQ</a></li>#}
+{##}
+{#                                        </ul>#}
+{#                                    </li>#}
+{##}
+{#                                    <li class="nav-item">#}
+{#                                        <a class="nav-link" href="{{ url_for('main.what_we_do') }}">What We Do</a>#}
+{#                                    </li>#}
+{##}
+{#                                    <li class="nav-item">#}
+{#                                        <a class="nav-link" href="{{ url_for('main.gallery') }}">Gallery</a></li>#}
+{##}
+{#                                    </li><li class="nav-item">#}
+{#                                    <a class="nav-link" href="{{ url_for('main.blog') }}">News & Events</a></li>#}
+{##}
+{#                                    </li>#}
+{##}
+{#                                    <li class="nav-item">#}
+{#                                        <a class="nav-link" href="{{ url_for('main.careers') }}">Careers#}
+{#                                        </a>#}
+{#                                    </li>#}
+{#                                    <li class="nav-item">#}
+{#                                        <a class="nav-link" href="{{ url_for('main.walk') }}">Walk With US</a>#}
+{#                                    </li>#}
+{##}
+{#                                    <li class="nav-item">#}
+{#                                        <a class="nav-link" href="{{  url_for('main.contact') }}">Contact#}
+{#                                        </a>#}
+{#                                    </li>#}
+                                    {#                                    <li class="nav-item">#}
+                                    {#                                        <a href="" class="nav-link"></a>#}
+                                    {#                                        {% for language in AVAILABLE_LANGUAGES.items() %}#}
+                                    {#                                            {% if CURRENT_LANGUAGE == language[0] %}#}
+                                    {#                                                {{ language[1] }}#}
+                                    {#                                            {% else %}#}
+                                    {#                                                <a href="{{ url_for('main.set_language', language=language[0]) }}" >{{ language[1] }}</a>#}
+                                    {#                                            {%  endif %}#}
+                                    {#                                        {% endfor %}#}
+                                    {#                                    </li>#}
+{##}
+{#                                </ul>#}
+{##}
+{#                            </div>#}
+{#                        </nav>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="col-auto d-flex align-items-center">#}
+{#                    <div class="social">#}
+{#                        <a href="https://www.facebook.com/donorionecentreKenya/"><i class="lab la-facebook-f"></i></a>#}
+{#                        <a href="https://www.youtube.com/channel/UCe6DP5l58FO4pRUTQJRUAgg"><i class="lab la-youtube"></i></a>#}
+{#                        <a href="https://www.instagram.com/orionecentreke/"><i class="lab la-instagram"></i></a>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div col-2>#}
+{#                <a class="button button--squared" href="{{ url_for('main.donate') }}"><span>Support the Course</span></a>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+
+<div class="header-area absolate-header theme-2">
+		<div id="sticky-wrapper" class="sticky-wrapper" style="height: 80px;"><div class="sticky-area" style="">
+			<div class="navigation">
+				<div class="row">
+					<div class="col-lg-2">
+						<div class="logo">
+							<a class="navbar-brand" href="#"><img src="assets/img/logo-white.png" alt=""></a>
+						</div>
+					</div>
+					<div class="col-lg-8">
+						<div class="main-menu">
+							<nav class="navbar navbar-expand-lg">
+								<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon"></span>
+									<span class="navbar-toggler-icon"></span>
+									<span class="navbar-toggler-icon"></span>
+								</button>
+
+								<div class="navbar-collapse justify-content-center collapse" id="navbarSupportedContent" style="">
+									<ul class="navbar-nav m-auto">
+                                       <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('main.index') }}">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Who We Are +
+                                            <span class="sub-nav-toggler"> <i class="fa fa-angle-down"></i>
+ 												</span>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li><a href="{{ url_for('main.about') }}">About Us</a></li>
+                                            <li><a href="{{ url_for('main.founder') }}">Our Founder</a></li>
+                                            <li><a href="{{ url_for('main.board') }}">Advisory Board</a></li>
+                                            <li><a href="{{ url_for('main.faq') }}">FAQ</a></li>
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('main.what_we_do') }}">What We Do</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('main.gallery') }}">Gallery</a></li>
+
+                                    </li><li class="nav-item">
+                                    <a class="nav-link" href="{{ url_for('main.blog') }}">News & Events</a></li>
+
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('main.careers') }}">Careers & Opportunities
+                                        </a>
+                                    </li>
+                                   {# <li class="nav-item">#}
+                                     {#   <a class="nav-link" href="{{ url_for('main.walk') }}">Walk With US</a>#}
+                                   {# </li>#}
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{  url_for('main.contact') }}">Contact
+                                        </a>
+                                    </li>
+									</ul>
+
+								</div>
+							</nav>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="social">
+							<a href="https://www.facebook.com/donorionecentreKenya/"><i class="lab la-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/channel/UCx8FNKzpjCrQBTLyaORhm5Q"><i class="lab la-youtube"></i></a>
+                        <a href="https://www.instagram.com/orionecentreke/"><i class="lab la-instagram"></i></a>
+						</div>
+					</div>
+{#                    <div class="col-lg-2">#}
+{#                        <a class="button button--squared" href="{{ url_for('main.donate') }}"><span>Support the Course</span></a>#}
+{#                    </div>#}
+				</div>
+			</div>
+		</div></div>
+	</div>
+
+
+{#<!-- Header Top Area -->#}
+{##}
+{#<div class="header-top-area">#}
+{#    <div class="container">#}
+{#        <div class="row">#}
+{#            <div class="col-md-6 col-sm-12">#}
+{#                <div class="site-info">#}
+{#                    <ul>#}
+{#                        <li><a href="#"><i class="fa fa-phone"></i> +254 793 752 250</a>#}
+{#                        </li><li><a href="mailto:info@orionekenya.org"><i class="fa fa-envelope"></i> info@orionekenya.org</a></li>#}
+{#                    </ul>#}
+{#                </div>#}
+{#            </div>#}
+{##}
+{#            <div class="col-md-6 col-sm-12 text-right">#}
+{#                <div class="social-icon">#}
+{#                    <a href="https://www.facebook.com/donorionecentreKenya/"><i class="lab la-facebook-f"></i></a>#}
+{#                    <a href="https://www.youtube.com/channel/UCe6DP5l58FO4pRUTQJRUAgg"><i class="lab la-youtube"></i></a>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+{##}
+{##}
+{#<!-- Header Area -->#}
+{##}
+{#<div class="header-area">#}
+{#    <div class="sticky-area">#}
+{#        <div class="navigation">#}
+{#            <div class="row">#}
+{#                <div class="col-lg-2">#}
+{#                    <div class="logo">#}
+{# 							<a class="navbar-brand" href="index.html#"><img src="{{ url_for('static', filename='site/images/logo.jpg') }}" alt=""></a>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="col-lg-8">#}
+{#                    <div class="main-menu">#}
+{#                        <nav class="navbar navbar-expand-lg">#}
+{#                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">#}
+{#                                <span class="navbar-toggler-icon"></span>#}
+{#                                <span class="navbar-toggler-icon"></span>#}
+{#                                <span class="navbar-toggler-icon"></span>#}
+{#                            </button>#}
+{##}
+{#                            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">#}
+{#                                <ul class="navbar-nav m-auto">#}
+{#                                    <li class="nav-item">#}
+{#                                        <a class="nav-link" href="{{ url_for('main.index') }}">Home</a>#}
+{#                                    </li>#}
+{#                                    <li class="nav-item">#}
+{#                                        <a class="nav-link active" href="#">About Us +#}
+{#                                            <span class="sub-nav-toggler"> <i class="fa fa-angle-down"></i>#}
+{# 												</span>#}
+{#                                        </a>#}
+{#                                        <ul class="sub-menu">#}
+{#                                            <li><a href="{{ url_for('main.about') }}">About Us</a></li>#}
+{#                                            <li><a href="{{ url_for('main.board') }}">Advisory Board</a></li>#}
+{#                                            <li><a href="{{ url_for('main.faq') }}">FAQ</a></li>#}
+{##}
+{#                                        </ul>#}
+{#                                    </li>#}
+{#                                    <li class="nav-item">#}
+{#                                        <a class="nav-link" href="{{ url_for('main.walk') }}">Walk With US</a>#}
+{#                                    </li>#}
+{#                                    <li class="nav-item">#}
+{#                                        <a class="nav-link" href="{{ url_for('main.gallery') }}">Gallery</a></li>#}
+{##}
+{#                                    </li><li class="nav-item">#}
+{#                                        <a class="nav-link" href="{{ url_for('main.blog') }}">News</a></li>#}
+{##}
+{#                                    </li>#}
+{#                                    <li class="nav-item">#}
+{#                                        <a class="nav-link" href="{{ url_for('main.events') }}">Events#}
+{#                                        </a>#}
+{#                                    </li>#}
+{##}
+{#                                    <li class="nav-item">#}
+{#                                        <a class="nav-link" href="{{ url_for('main.careers') }}">Careers#}
+{#                                        </a>#}
+{#                                    </li>#}
+{##}
+{#                                    <li class="nav-item">#}
+{#                                        <a class="nav-link" href="{{  url_for('main.contact') }}">Contact#}
+{#                                        </a>#}
+{#                                    </li>#}
+{#                                    <li class="nav-item">#}
+{#                                        <a href="" class="nav-link"></a>#}
+{#                                        {% for language in AVAILABLE_LANGUAGES.items() %}#}
+{#                                            {% if CURRENT_LANGUAGE == language[0] %}#}
+{#                                                {{ language[1] }}#}
+{#                                            {% else %}#}
+{#                                                <a href="{{ url_for('main.set_language', language=language[0]) }}" >{{ language[1] }}</a>#}
+{#                                            {%  endif %}#}
+{#                                        {% endfor %}#}
+{#                                    </li>#}
+{##}
+{#                                </ul>#}
+{##}
+{#                            </div>#}
+{#                        </nav>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="col-lg-2 text-right">#}
+{#                    <div class="header-right-content">#}
+{#                        <a href="#" class="main-btn">Walk with us</a>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+

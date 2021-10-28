@@ -1,0 +1,120 @@
+{% extends 'site/layout/base.html' %}
+
+{% block content %}
+
+    <!-- Breadcrumb Area -->
+
+    <div class="breadcrumb-area bread-bg-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-title text-center">
+                        <h1>Our Programs</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Events Area -->
+
+    <div class="event-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                    <div class="col-lg-12 mb-5">
+                        <div class="section-bg">
+                            <div class="section-absolute-bg absolute-bg-1">
+                            </div>
+                            <div class="row">
+                                <div class="offset-6 col-lg-6 col-md-6">
+                                    <div class="single-event mb-3">
+                                        <h6>Special Education</h6>
+                                        <p>We have established two Centres in Kenya to provide a range of services
+                                            needed by the community and have been awarded Certificates of Registration
+                                            for Basic Education Institution...</p>
+                                        <a href="{{ url_for('main.special_education') }}">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-12 mb-5">
+                        <div class="section-bg bg-2">
+                            <div class="section-absolute-bg absolute-bg-3">
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="single-event mb-5">
+
+                                        <h6>Rehabilitation and Therapy</h6>
+                                        <p>The range of needs that our students have requires different forms of
+                                            rehabilitation and education...</p>
+                                        <a href="{{ url_for('main.rehab') }}">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12 mb-5">
+                        <div class="section-bg">
+                            <div class="section-absolute-bg absolute-bg-2">
+                            </div>
+                            <div class="row">
+                                <div class="offset-6 col-lg-6 col-md-6">
+                                    <div class="single-event">
+                                        <h6>Vocational Training</h6>
+                                        <p>We have a farm of 4 acres where we train and empower our students on
+                                            horticultural farming. It supplies food for our Centre and income to run
+                                            programs by selling produce to the local community. Most importantly, it
+                                            provides vocational training, employment and income for our...</p>
+                                        <a href="{{ url_for('main.vocational') }}">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-12 mb-5">
+                        <div class="section-bg bg-2">
+                            <div class="section-absolute-bg absolute-bg-4">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="single-event mb-5">
+                                        <h6>Community Inclusion</h6>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quis omnis
+                                            dolor</p>
+                                        <a href="{{ url_for('main.community') }}">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="cta-area theme-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-7 text-center">
+					<h2>Download our <br>Strategic <b>Plan</b></h2>
+				</div>
+				<div class="col-lg-6 col-md-5 wow fadeInUp  animated" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+					<a href="{{ url_for('main.download', filename='Orione_Strategic_Plan_Jan2020.pptx') }}" class="main-btn"><i class="fa fa-download" ></i> Strategic Plan</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+{% endblock %}

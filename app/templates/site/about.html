@@ -1,0 +1,187 @@
+{% extends 'site/layout/base.html' %}
+
+{% block content %}
+
+    <!-- Breadcrumb Area -->
+
+    <div class="breadcrumb-area bread-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-title text-center">
+                        <h1>About Us</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {#    <!-- About Area-->#}
+    {#    <nav class="about-nav">#}
+    {#        <a>About US</a>#}
+    {#        <a>About US</a>#}
+    {#        <a>About US</a>#}
+    {#        <a>About US</a>#}
+    {#        <a>About US</a>#}
+    {#        <a>About US</a>#}
+    {#        <a>About US</a>#}
+    {#         <a>About US</a>#}
+    {#        <a>About US</a>#}
+    {#        <a>About US</a>#}
+    {#        <a>About US</a>#}
+    {#        <a>About US</a>#}
+    {#        <a>About US</a>#}
+    {#        <a>About US</a>#}
+    {##}
+    {#    </nav>#}
+
+    {#    <nav class="navbar navbar-expand-lg navbar-light bg-light">#}
+    {##}
+    {##}
+    {#        <div class="collapse navbar-collapse" id="navbarSupportedContent">#}
+    {#            <ul class="navbar-nav mr-auto">#}
+    {#                <li class="nav-item active">#}
+    {#                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>#}
+    {#                </li>#}
+    {#                <li class="nav-item">#}
+    {#                    <a class="nav-link" href="#">Link</a>#}
+    {#                </li>#}
+    {#                <li class="nav-item dropdown">#}
+    {#                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"#}
+    {#                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">#}
+    {#                        Dropdown#}
+    {#                    </a>#}
+    {#                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">#}
+    {#                        <a class="dropdown-item" href="#">Action</a>#}
+    {#                        <a class="dropdown-item" href="#">Another action</a>#}
+    {#                        <div class="dropdown-divider"></div>#}
+    {#                        <a class="dropdown-item" href="#">Something else here</a>#}
+    {#                    </div>#}
+    {#                </li>#}
+    {#                <li class="nav-item">#}
+    {#                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>#}
+    {#                </li>#}
+    {#            </ul>#}
+    {#        </div>#}
+    {#    </nav>#}
+
+
+{#    <div class="founder-area gray-bg section-padding">#}
+{#        <div class="container">#}
+{#           <div class="row">#}
+{#                <div class="col-lg-12 text-center ">#}
+{#                    <div class="section-title">#}
+{#                        <h2>Founder</h2>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#                <div class="col-12">#}
+{#                    <div class="row">#}
+{#                        <div class="col-lg-6 col-sm-12 my-auto">#}
+{#                            <h1>Our story begins with</h1>#}
+{#                            <p class="fouder-p">Don Orione, the Founder of the <br> Orione Community Training Centre</p>#}
+{#                        </div>#}
+{#                        <div class="col-lg-5 col-sm-12">#}
+{#                            <img class="founder-img" src="{{ url_for('static', filename='site/images/don-orione.jpeg') }}" alt="">#}
+{#                        </div>#}
+{##}
+{#                    </div>#}
+{#                </div>#}
+{#        </div>#}
+{#    </div>#}
+    <div class="about-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="about-image">
+                       <img class="img-thumbnail" src="{{ url_for('static', filename='site/images/don-orione.jpeg') }}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="about-content">
+{#                        <div class="section-title">#}
+{#                            <h3>ABout US</h3>#}
+{#                        </div>#}
+
+                        <p>The Orione Community Training Centre (OCTC) is a charitable organization
+                            founded and run by the Sons of Divine Providence community of the
+                            Catholic Church. The Sons of Divine Providence is a Roman Catholic
+                            religious institute founded in Italy in 1893 by Luigi Orione (1872-1940).
+                            Under the charisma of their founder, The Sons of Divine Providence have
+                            dedicated their lives to help the poor, the young, the elderly, the sick and
+                            people with disabilities.
+
+                            The OCTC Kenya was founded in 2005 and has evolved over the last 14
+                            years into a symbol of inclusion for the children and youth with intellectual
+                            disabilities who are usually treated as a “stigma” by the Kenyan society. The
+                            center has promoted and provided a reason to give them relevance, hope and
+                            potential value to their community.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feature Area -->
+
+    <div class="feature-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="single-feature-item">
+                        <div class="feature-icon">
+                            <i class="flaticon-donation-1"></i>
+                        </div>
+                        <h5>Our Mission</h5>
+                        <p>Expand the promotion and inclusion of children
+                            and youth with disabilities while providing them
+                            with Christian values, quality education and
+                            rehabilitation.
+
+                            Influence and support society to achieve initial
+                            inclusion actions while sharing expertise in the
+                            educational approach.</p>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                    <div class="single-feature-item">
+                        <div class="feature-icon">
+                            <i class="flaticon-charity"></i>
+                        </div>
+                        <h5>Our Vision</h5>
+                        <p>An institution of living Christian testimony
+                            and excellence in providing significant
+                            improvement to the development of children
+                            with intellectual disability, while supporting
+                            their integration into the society</p>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="section-padding gray-bg">
+    <div class="container text-center">
+         <h5>The Orione Community Training Center is duly registered under the Ministry of Education, Science and Technology – State Department of Education under registration number MOEST/A/27265.</h5>
+    </div>
+    </div>
+
+    <div id="cpp" class="cta-area">
+ 		<div class="container">
+ 			<div class="row">
+ 				<div class="col-lg-12 text-center">
+ 					<h2>Lets make the world <br>better <b>together</b></h2>
+                    <a href="{{ url_for('main.download', filename='Orione_Community_Training_Center_Child_Protection_Policy_6.3.19.pdf') }}" class="main-btn"><i class="fa fa-download"></i> Child Protection Policy</a>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+
+
+{% endblock %}

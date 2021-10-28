@@ -1,0 +1,143 @@
+{% extends 'site/layout/base.html' %}
+
+{% block content %}
+
+    <!-- Breadcrumb Area -->
+
+	<div class="breadcrumb-area bread-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="breadcrumb-title text-center">
+						<h1>Helpful FAQ's</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Frequently Asked Question -->
+
+	<div class="faq-section section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="section-title">
+						<h2>Frequently Asked Question</h2>
+					</div>
+					<div class="styled-faq">
+						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<h6 class="panel-title">
+										<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+											What is the process of admission to the Centre?
+											<i class="fa fa-angle-up"></i>
+											<i class="fa fa-angle-down"></i>
+										</a>
+									</h6>
+								</div>
+								<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" style="">
+									<div class="panel-body">
+										Visit Educational Offices in Ngong for assessment of the child or youth whereby
+                                        you will be issued with a referral form which you will present it at the Centre
+                                        for our internal intake procedures.
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-heading active" role="tab" id="headingTwo">
+									<h6 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+											What is intellectual disability?
+											<i class="fa fa-angle-up"></i>
+											<i class="fa fa-angle-down"></i>
+										</a>
+									</h6>
+								</div>
+								<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" style="">
+									<div class="panel-body">
+										Intellectual disability is a disability characterized by significant
+                                        limitations both in intellectual functioning (reasoning, learning, problem
+                                        solving) and in adaptive behaviour, which covers a range of everyday social
+                                        and practical skills. This disability originates before the age of 18.
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingThree">
+									<h6 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+											 Is intellectual disability the same as developmental disabilities?
+											<i class="fa fa-angle-up"></i>
+											<i class="fa fa-angle-down"></i>
+										</a>
+									</h6>
+								</div>
+								<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+									<div class="panel-body">
+										“Developmental Disabilities” is an umbrella term that includes intellectual
+                                        disability but also includes other disabilities that are apparent during
+                                        childhood. Developmental disabilities are severe chronic disabilities that can
+                                        be cognitive or physical or both. The disabilities appear before the age of 22
+                                        and are likely to be lifelong. Some developmental disabilities are largely
+                                        physical issues, such as cerebral palsy or epilepsy. Some individuals may have
+                                        a condition that includes a physical and intellectual disability, for example
+                                        Down syndrome. Intellectual disability encompasses the “cognitive” part of this
+                                        definition, that is, a disability that is broadly related to thought processes.
+                                        Because intellectual and other developmental disabilities often co-occur,
+                                        intellectual disability professionals often work with people who have both
+                                        types of disabilities.
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingFour">
+									<h6 class="panel-title">
+										<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" class="collapsed">
+											 How do you determine if it is Intellectual disability?
+											<i class="fa fa-angle-up"></i>
+											<i class="fa fa-angle-down"></i>
+										</a>
+									</h6>
+								</div>
+								<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+									<div class="panel-body">
+										There are three major criteria for intellectual disability: significant
+                                        limitations in intellectual functioning, significant limitations in adaptive
+                                        behavior, and onset before the age of 18. Other tests determine limitations in
+                                        adaptive behavior, which covers three types of skills: Conceptual
+                                        skills—language and literacy; money, time, and number concepts; and
+                                        self-direction Social skills—interpersonal skills, social responsibility,
+                                        self-esteem, gullibility, naïveté (i.e., wariness), social problem solving,
+                                        and the ability to follow rules, obey laws, and avoid being victimized<br>
+
+                                        Practical skills—activities of daily living (person.al care), occupational
+                                        skills, healthcare, travel/transportation, schedules/routines, safety,
+                                        use of money, use of the telephone.
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="question-section">
+						<h6>Have any Question?</h6>
+						<form action="http://capricorn-theme.net/html/charry/sendemail.php">
+							<input type="text" name="name" id="name" required="" placeholder="Full Name">
+							<input type="email" name="email" id="email" required="" placeholder="Your E-mail">
+							<textarea name="message" id="message" cols="30" rows="10" required="" placeholder="How can help you?"></textarea>
+							<button type="submit" name="submit">Your Question</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}

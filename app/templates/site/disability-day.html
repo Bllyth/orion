@@ -1,0 +1,231 @@
+{% extends 'site/layout/base.html' %}
+
+{% block content %}
+
+    <div class="breadcrumb-area bread-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-title text-center">
+                        <h1>Articles Details</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Area  -->
+
+    <div class="blog-section section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-12">
+                    <div class="single-blog-wrap">
+                        <video width="730" controls>
+                            <source src="{{ url_for('static', filename='site/videos/chile-firstlady.mp4') }}">
+                        </video>
+                        <p class="article-picture_caption">
+                            Greetings and remarks from Cecilia Morel Montes, the First Lady of Chile
+                        </p>
+
+                        <div class="blog-meta">
+
+                            {#							<span><i class="las la-user"></i>Admin</span>#}
+                            {#							<span><i class="las la-calendar"></i>May 01, 2020</span>#}
+                            {#							<span><i class="las la-comments"></i>2 Comments</span>#}
+                        </div>
+                        <h3>The International Day for Persons Living with Disabilities</h3>
+                        <p>This year, our Centre was selected to host the main Kajiado County Celebrations to mark the
+                            International Day for Persons Living with Disabilities.</p>
+
+                        <p>To best interpret the theme this year: "
+                            <b>Building Back Better: toward a disability-inclusive, accessible and sustainable post
+                                COVID-19 World
+                            </b>
+                            ", The Centre which continues to demonstrate its commitment to vulnerable groups during this
+                            difficult time, had lined up the following activities;
+                        <p>
+                        <ol>
+                            <li>Report on the Joint Emergency Intervention Program together with the Kajiado County
+                                Government – Currently we have received 270 children with mental conditions and
+                                syndromes who come to the Centre daily to receive rehabilitation and early intervention
+                                to prevent regression.
+                            </li>
+                            <li>Opening of new hygienic facilities for persons living with disabilities sponsored by
+                                Manos Unidas Foundation from Spain.
+                            </li>
+                            <li>Launch of a 1-year Campaign Against Malnutrition where 400 children will benefit
+                                supported by Peanut Butter Project
+                            </li>
+                            <li>Launch of Home-Based Rehabilitation Care Services for persons with special needs
+                                supported by Hickey Family Foundation from United States of America.
+                            </li>
+
+                        </ol>
+
+
+                        <p>The day was graced by;</p>
+
+                        <ol type="i">
+                            <li>H.E Martin Moshisho – Deputy Governor Kajiado County</li>
+                            <li>Msgr. Visvaldas - Secretary to Nuncio</li>
+                            <li>H.E. Alejandra Guerra – Ambassador of Chile</li>
+                            <li>Mr. Stephen Fagan - Second Secretary, Embassy of Ireland</li>
+                            <li>Rev. Fr.Mwangi - Executive Diocesian Secretary , Diocese of Ngong</li>
+                            <li>Ms. Isabella Padua - Member, Don Orione Centre Advisory Board</li>
+                        </ol>
+
+                        <p>
+                            Among other key stakeholders and partners not forgetting our beneficiaries and main
+                            celebrants of the day – Our children and youth with mental conditions and syndromes.
+                        </p>
+                        <img src="{{ url_for('static', filename='site/images/deputy-governor-kajiado.jpeg') }}"
+                             alt="">
+                        <p class="article-picture_caption">
+                            H.E Martin Moshisho, Deputy Governor Kajiado County
+                        </p>
+                        <p>
+                            We also had key note speeches and remarks read out to our guests from our international
+                            benefactors
+                        </p>
+                        <ol type="i">
+                            <li>H.E. Cecilia Morel Montes – First Lady of Chile</li>
+                            <li>Ms. Nancy Baldwin – Trustee and Executive Director, Hickey Family Foundation</li>
+                            <li>Dr. Luis Franceschi - Senior Director, Governance & Peace at the Commonwealth
+                                Secretariat.
+                            </li>
+                            <li>Mr. Hernán Larraín Fernández – Minister of Justice and Human Rights, Chile</li>
+                            <li>Ms. Petra Poľašková -Development Cooperation Counsellor, Embassy of Slovakia</li>
+                            <li>Fr. Alejandro Ruiz – Director, Orione Community Training Centre</li>
+                        </ol>
+
+                        <p>
+                            The Centre will also received special recognition for its contribution during this difficult
+                            time of the COVID 19 pandemic by the United Nations special Envoy on Disability and
+                            Accessibility Ms. Maria Soledad Cisternas Reyes of Chile.
+                        </p>
+                        <img src="{{ url_for('static', filename='site/images/alexandra-guerra-chile-ambassador.jpeg') }}"
+                             alt="">
+                        <p class="article-picture_caption">
+                            H.E. Alejandra Guerra, Ambassador of Chile and the Consul, Mr. Alejandro accompanied by the project manager Richard Manyara
+                        </p>
+                        <p>
+                            We remain grateful to our benefactors, partners and friends for their continued support and
+                            help without which our works would not be possible.
+                        </p>
+                        <p>
+                            Let’s continue working together towards the promotion of dignity, love and respect for
+                            persons living with disabilities
+                        </p>
+                        <p><b>Letters from our donors</b></p>
+                        <div class="pb-6 doc-down">
+                        <a class="mb-1 pl-4 d-block" href="{{ url_for('main.download', filename='Cecilia-Morel-Montes-fistlady-chile.pdf') }}"
+                           >
+                            <img class="ico-svg mr-1" src="{{ url_for('static', filename='site/images/pdf-icon.svg') }}" alt="">First lady of Chile</a>
+
+
+                        <a href="{{ url_for('main.download', filename='commonwealth.pdf') }}" class="doc-down mb-2 pl-4 d-block">
+                            <img class="ico-svg mr-1" src="{{ url_for('static', filename='site/images/pdf-icon.svg') }}" alt="">The Commonwealth</a>
+
+
+                        <a href="{{ url_for('main.download', filename='embassy-slovakia-greetings.pdf') }}"
+                           class="doc-down mb-2 pl-4 d-block">
+                            <img class="ico-svg mr-1" src="{{ url_for('static', filename='site/images/pdf-icon.svg') }}" alt=""> Embassy of Slovak Republic</a>
+
+                        <a href="{{ url_for('main.download', filename='minister-of -justice-and-human-rights-chile.pdf') }}"
+                           class="doc-down mb-2 pl-4 d-block">
+                            <img class="ico-svg mr-1" src="{{ url_for('static', filename='site/images/pdf-icon.svg') }}" alt=""> Ministry of Human Rights Republic of
+                            chile</a>
+
+                        <a href="{{ url_for('main.download', filename='nancy-baldwin-hickey-family-foundation.pdf') }}"
+                           class="doc-down mb-2 pl-4 d-block">
+                            <img class="ico-svg mr-1" src="{{ url_for('static', filename='site/images/pdf-icon.svg') }}" alt=""> Hickey Family Foundation</a>
+                        </div>
+
+                        <div class="pt-5">
+
+                        <img class="blog-inside"
+                             src="{{ url_for('static', filename='site/images/disability-day-2.jpeg') }}"
+                             alt="">
+                        <img class="blog-inside"
+                             src="{{ url_for('static', filename='site/images/disability-day-3.jpeg') }}"
+                             alt="">
+                        <div class="mt-4"></div>
+                        <img class="blog-inside"
+                             src="{{ url_for('static', filename='site/images/disability-day-4.jpeg') }}"
+                             alt="">
+                        <img class="blog-inside"
+                             src="{{ url_for('static', filename='site/images/visvaldas-secretary-nuncio.jpeg') }}"
+                             alt="">
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                {#                <div class="col-lg-4 col-md-12">#}
+                {#                    <aside class="sidebar">#}
+                {#                        <div class="blog-search">#}
+                {#                            <form action="#">#}
+                {#                                <input type="search" placeholder="Search here">#}
+                {#                                <button type="submit"><i class="las la-search"></i>search</button>#}
+                {#                            </form>#}
+                {#                        </div>#}
+                {#                        <div class="blog-category">#}
+                {#                            <h5>Categories</h5>#}
+                {#                            <a class="active" href="l#">Education</a>#}
+                {#                            <a href="#">Medical</a>#}
+                {#                            <a href="#">Health</a>#}
+                {#                            <a href="#">Food &amp; Drinks</a>#}
+                {#                            <a href="#">Donation</a>#}
+                {#                        </div>#}
+                {#                        <div class="recent-post">#}
+                {#                            <h5>Recent Post</h5>#}
+                {#                            <div class="single-recent-post">#}
+                {#                                <img src="assets/img/recent-post-bg.jpg" alt="">#}
+                {#                                <div class="recent-post-content">#}
+                {#                                    <h6><a href="ml">Awareness of COVID-19 effect</a></h6>#}
+                {#                                    <p class="post-date"><i class="las la-calendar"></i>August 10, 2019</p>#}
+                {#                                </div>#}
+                {#                            </div>#}
+                {#                            <div class="single-recent-post">#}
+                {#                                <img src="assets/img/recent-post-bg-2.jpg" alt="">#}
+                {#                                <div class="recent-post-content">#}
+                {#                                    <h6><a href="ml">Raise Fund for Healthy Food &amp; Drinks</a></h6>#}
+                {#                                    <p class="post-date"><i class="las la-calendar"></i>August 10, 2019</p>#}
+                {#                                </div>#}
+                {#                            </div>#}
+                {##}
+                {#                            <div class="single-recent-post">#}
+                {#                                <img src="assets/img/recent-post-bg-3.jpg" alt="">#}
+                {#                                <div class="recent-post-content">#}
+                {#                                    <h6><a href="ml">Corona effected community awareness</a></h6>#}
+                {#                                    <p class="post-date"><i class="las la-calendar"></i>August 10, 2019</p>#}
+                {#                                </div>#}
+                {#                            </div>#}
+                {#                        </div>#}
+                {#                        <div class="archive">#}
+                {#                            <h5>Archive</h5>#}
+                {#                            <a href="#">Food Fund</a>#}
+                {#                            <a href="#">Medical Checkup</a>#}
+                {#                            <a href="#">Child Care</a>#}
+                {#                            <a href="#">Pure Water</a>#}
+                {#                            <a href="#">Covid-19</a>#}
+                {#                        </div>#}
+                {#                        <div class="popular-tag">#}
+                {#                            <h5>Popular Tags</h5>#}
+                {#                            <span><a href="#">health</a></span>#}
+                {#                            <span><a href="#">donation</a></span>#}
+                {#                            <span><a href="#">fund</a></span>#}
+                {#                            <span><a href="#">charity</a></span>#}
+                {#                            <span><a href="#">covid-19</a></span>#}
+                {#                            <span><a href="#">non-profit</a></span>#}
+                {#                        </div>#}
+                {#                    </aside>#}
+                {#                </div>#}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

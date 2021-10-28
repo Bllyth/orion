@@ -1,0 +1,130 @@
+{% extends 'site/layout/base.html' %}
+
+{% block content %}
+
+    <div class="breadcrumb-area bread-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-title text-center">
+                        <h1>Articles Details</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Area  -->
+
+    <div class="blog-section section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-12">
+                    <div class="single-blog-wrap">
+                        <img src="{{ url_for('static', filename='site/images/anniversary-2.jpg') }}" alt="">
+                        <div class="blog-meta">
+                            {#							<span><i class="las la-user"></i>Admin</span>#}
+                            {#							<span><i class="las la-calendar"></i>May 01, 2020</span>#}
+                            {#							<span><i class="las la-comments"></i>2 Comments</span>#}
+                        </div>
+                        <h3>5th Anniversary and Courtesy Visit by Hon. Martin Moshisho Martine, Deputy Governor ,Kajiado
+                            County</h3>
+                        <p>On the 10th of July 2020, our institution both in Kandisi celebrated its 5th Anniversary
+                            since its opening where we have been able to provide essential services of education ,
+                            rehabilitation and training to children and youth with intellectual disabilities.</p>
+                        <p>Our commitment remains the same – Promotion of human dignity through loving, respecting and
+                            caring for the most vulnerable members of our communities.</p>
+                        <p>This time round , our celebrations were unique and special owing to the current pandemic
+                            ,nevertheless we celebrated with our local community -300 children who are beneficiaries of
+                            our on-going daily feeding program.</p>
+                        <p>Additionally, we received a surprise visit by the Deputy Governor of Kajiado County Hon.
+                            Martin Moshisho Martine and his delegation who joined in the celebrations and volunteered to
+                            serve the children lunch and goodies.</p>
+                        <p>Special gratitude goes to all our donors, friends and benefactors who have made our work and
+                            interventions possible throughout the years.</p>
+
+                        <img class="blog-inside" src="{{ url_for('static', filename='site/images/anniversary-1.jpg') }}"
+                             alt="">
+                        <img class="blog-inside" src="{{ url_for('static', filename='site/images/anniversary-4.jpg') }}"
+                             alt="">
+
+                        <h6 class="mt-5">Click to read the Daily Nation article</h6>
+                        <style>
+                            a:hover {
+                                text-decoration: underline;
+                            }
+                        </style>
+                        <a class="text-primary" style="a:hover: text-decoration"
+                           href="https://www.nation.co.ke/kenya/life-and-style/dn2/centre-for-intellectually-disabled-feeds-the-needy-as-covid-19-rages-on-1288950">Centre
+                            for intellectually disabled feeds the needy as Covid-19 rages on</a>
+
+
+                    </div>
+
+
+                </div>
+                {#                <div class="col-lg-4 col-md-12">#}
+                {#                    <aside class="sidebar">#}
+                {#                        <div class="blog-search">#}
+                {#                            <form action="#">#}
+                {#                                <input type="search" placeholder="Search here">#}
+                {#                                <button type="submit"><i class="las la-search"></i>search</button>#}
+                {#                            </form>#}
+                {#                        </div>#}
+                {#                        <div class="blog-category">#}
+                {#                            <h5>Categories</h5>#}
+                {#                            <a class="active" href="l#">Education</a>#}
+                {#                            <a href="#">Medical</a>#}
+                {#                            <a href="#">Health</a>#}
+                {#                            <a href="#">Food &amp; Drinks</a>#}
+                {#                            <a href="#">Donation</a>#}
+                {#                        </div>#}
+                {#                        <div class="recent-post">#}
+                {#                            <h5>Recent Post</h5>#}
+                {#                            <div class="single-recent-post">#}
+                {#                                <img src="assets/img/recent-post-bg.jpg" alt="">#}
+                {#                                <div class="recent-post-content">#}
+                {#                                    <h6><a href="ml">Awareness of COVID-19 effect</a></h6>#}
+                {#                                    <p class="post-date"><i class="las la-calendar"></i>August 10, 2019</p>#}
+                {#                                </div>#}
+                {#                            </div>#}
+                {#                            <div class="single-recent-post">#}
+                {#                                <img src="assets/img/recent-post-bg-2.jpg" alt="">#}
+                {#                                <div class="recent-post-content">#}
+                {#                                    <h6><a href="ml">Raise Fund for Healthy Food &amp; Drinks</a></h6>#}
+                {#                                    <p class="post-date"><i class="las la-calendar"></i>August 10, 2019</p>#}
+                {#                                </div>#}
+                {#                            </div>#}
+                {##}
+                {#                            <div class="single-recent-post">#}
+                {#                                <img src="assets/img/recent-post-bg-3.jpg" alt="">#}
+                {#                                <div class="recent-post-content">#}
+                {#                                    <h6><a href="ml">Corona effected community awareness</a></h6>#}
+                {#                                    <p class="post-date"><i class="las la-calendar"></i>August 10, 2019</p>#}
+                {#                                </div>#}
+                {#                            </div>#}
+                {#                        </div>#}
+                {#                        <div class="archive">#}
+                {#                            <h5>Archive</h5>#}
+                {#                            <a href="#">Food Fund</a>#}
+                {#                            <a href="#">Medical Checkup</a>#}
+                {#                            <a href="#">Child Care</a>#}
+                {#                            <a href="#">Pure Water</a>#}
+                {#                            <a href="#">Covid-19</a>#}
+                {#                        </div>#}
+                {#                        <div class="popular-tag">#}
+                {#                            <h5>Popular Tags</h5>#}
+                {#                            <span><a href="#">health</a></span>#}
+                {#                            <span><a href="#">donation</a></span>#}
+                {#                            <span><a href="#">fund</a></span>#}
+                {#                            <span><a href="#">charity</a></span>#}
+                {#                            <span><a href="#">covid-19</a></span>#}
+                {#                            <span><a href="#">non-profit</a></span>#}
+                {#                        </div>#}
+                {#                    </aside>#}
+                {#                </div>#}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

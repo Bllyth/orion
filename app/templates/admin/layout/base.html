@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <title> Orione </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- App favicon -->
+    {#    <link rel="shortcut icon" href="{{ url_for('static', filename='site/images/favicon.ico') }}">#}
+
+    <!-- DataTables -->
+    <link href="{{ url_for('static', filename='admin/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css') }}"
+          rel="stylesheet" type="text/css"/>
+
+        <!-- Summernote css -->
+    <link href="{{ url_for('static', filename='admin/libs/summernote/summernote-bs4.min.css') }}" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap Css -->
+    <link href="{{ url_for('static', filename='admin/css/bootstrap.min.css') }}" id="bootstrap-style" rel="stylesheet"
+          type="text/css"/>
+    <!-- Icons Css -->
+    <link href="{{ url_for('static', filename='admin/css/icons.min.css') }}" rel="stylesheet" type="text/css"/>
+    <!-- App Css-->
+    <link href="{{ url_for('static', filename='admin/css/app.min.css') }}" id="app-style" rel="stylesheet"
+          type="text/css"/>
+
+</head>
+
+<body data-layout="detached" data-topbar="colored">
+
+<div class="container-fluid">
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        {% include 'admin/partials/topbar.html' %}
+
+        {% include 'admin/partials/sidebar.html' %}
+
+        {% block content %}
+
+        {% endblock %}
+
+
+    </div>
+</div>
+
+
+<!-- JAVASCRIPT -->
+<script src="{{ url_for('static', filename='admin/libs/jquery/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='admin/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='admin/libs/metismenu/metisMenu.min.js') }}"></script>
+<script src="{{ url_for('static', filename='admin/libs/simplebar/simplebar.min.js') }}"></script>
+<script src="{{ url_for('static', filename='admin/libs/node-waves/waves.min.js') }}"></script>
+
+<!-- Required datatable js -->
+<script src="{{ url_for('static', filename='admin/libs/datatables.net/js/jquery.dataTables.min.js') }}"></script>
+<script src="{{ url_for('static', filename='admin/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+<!-- Summernote js -->
+    <script src="{{ url_for('static', filename='admin/libs/summernote/summernote-bs4.min.js') }}"></script>
+
+
+
+<script src="{{ url_for('static', filename='admin/js/app.js') }}"></script>
+<script src="{{ url_for('static', filename='admin/js/my.js') }}"></script>
+{#<script>#}
+{#    $(".summernote").summernote({#}
+{#        height: 300,#}
+{#        minHeight: null,#}
+{#        maxHeight: null,#}
+{#        focus: !0#}
+{#    })#}
+{#</script>#}
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+	<footer class="footer-area">
+ 		<div class="container">
+ 			<div class="footer-up">
+ 				<div class="row">
+ 					<div class="col-lg-3 col-md-6 col-sm-12">
+ 						<div class="logo">
+ 							<a class="navbar-brand" href="#"><img src="{{ url_for('static', filename='site/images/logo.jpg') }}" alt=""></a>
+ 						</div>
+{#                        <p>The Orione Community Training Center is duly registered under the Ministry of Education, Science and Technology – State Department of Education under registration number MOEST/A/27265.</p>#}
+
+ 					</div>
+
+                    <div class="col-lg-3 col-md-6 com-sm-12 offset-1">
+						<h5>Useful Links</h5>
+						<ul>
+							<li>
+								<a href="{{ url_for('main.index') }}">Home</a>
+								<a href="{{ url_for('main.about') }}">About Us</a>
+								<a href="{{ url_for('main.what_we_do') }}">What We Do</a>
+								<a href="{{ url_for('main.contact') }}">Contact</a>
+                                <a href="{{ url_for('main.about') + '#cpp'}}">Child Protection Policy</a>
+							</li>
+						</ul>
+					</div>
+ 					<div class="col-lg-3 col-md-6 com-sm-12 offset-2 text-center">
+ 						<h5>Our Contacts</h5>
+
+                                <p>info@orionekenya.org</p>
+                        <p>P.O. BOX 409-00206, <br> Kandisi, Kiserian.</p>
+
+
+ 					</div>
+
+
+ 				</div>
+ 			</div>
+ 			<div class="footer-bottom">
+ 				<div class="row justify-content-center align-items-center">
+
+ 						<p class="copyright-line">© <script>document.write(new Date().getFullYear())</script> Orione Kenya. All rights reserved.</p>
+
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</footer>

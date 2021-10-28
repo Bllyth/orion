@@ -1,0 +1,64 @@
+{% extends 'site/layout/base.html' %}
+
+{% block content %}
+
+    <!-- Breadcrumb Area -->
+
+	<div class="breadcrumb-area bread-bg-7">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="breadcrumb-title text-center">
+						<h1>Contact Us</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Contact Area -->
+
+	<div class="contact-section section-padding">
+		<div class="contacts-wrapper">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-lg-6">
+						<h3 class="contact-form-title">Get in Touch</h3>
+                        <span class="form-text">* The following info is required</span>
+						<form name="contact-form" id="contactForm" action="http://capricorn-theme.net/html/charry/sendemail.php" method="POST">
+                            <div class="row">
+											<div class="col-lg-6">
+												<input class="form__field" type="text" name="first-name" placeholder="First Name *" required="required">
+											</div>
+											<div class="col-lg-6">
+												<input class="form__field" type="text" name="last-name" placeholder="Last Name *" required="required">
+											</div>
+											<div class="col-lg-6">
+												<input class="form__field" type="email" name="email" placeholder="Email *" required="required">
+											</div>
+											<div class="col-lg-6">
+												<input class="form__field" type="tel" name="phone-number" placeholder="Phone">
+											</div>
+											<div class="col-12">
+												<textarea class="form__message form__field" name="message" placeholder="Message"></textarea>
+											</div>
+											<div class="col-12">
+												<button class="form__submit" type="submit">Send Message</button>
+											</div>
+										</div>
+						</form>
+				</div>
+                </div>
+            </div>
+
+					<div class="map-section">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7977.211093536947!2d36.75307900000001!3d-1.412739!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4579b9eb5bd0e432!2sOrione%20Community%20Training%20Centre!5e0!3m2!1sen!2sus!4v1590107246752!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+						<i class="las la-map-marker"></i>
+					</div>
+
+		</div>
+	</div>
+
+
+{% endblock %}

@@ -1,0 +1,84 @@
+{% extends 'site/layout/base.html' %}
+
+{% block content %}
+
+    <!-- Breadcrumb Area -->
+
+    <div class="breadcrumb-area bread-bg-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-title text-center">
+                        <h1>Our <b>Causes</b></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Causes Area-->
+
+    <div class="causes-area section-padding">
+        <div class="container">
+            <div class="row offset-margin">
+                <div class="col-md-8 offset-md-2 col-lg-12 offset-lg-0">
+                    <div class="causes-item causes-item">
+                        <div class="causes-item__body">
+                            <div class="row align-items-center">
+                                <div class="col-lg-5 col-xl-4">
+                                    <div class="causes-item__img">
+                                        <img class="img--bg"
+                                             src="{{ url_for('static', filename='site/images/cause-wheelchair.jpg') }}"
+                                             alt="img">
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 col-xl-8">
+                                    <div class="causes-item__action justify-content-end">
+                                        <a class="causes-item__link" href="#">Donate</a>
+                                    </div>
+                                    <div class="causes-item__top">
+                                        <h6 class="causes-item__title"><a href="#">Wheelchair Program</a></h6>
+                                        <p>At OCTC, we run an annual wheelchair program where we donate a set number
+                                            of the chairs to the needy living with motor disabilities. </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 offset-md-2 col-lg-12 offset-lg-0">
+                    <div class="causes-item causes-item">
+                        <div class="causes-item__body">
+                            <div class="row align-items-center">
+                                <div class="col-lg-5 col-xl-4">
+                                    <div class="causes-item__img">
+                                        <img class="img--bg"
+                                             src="{{ url_for('static', filename='site/images/cause-farming.jpg') }}"
+                                             alt="img">
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 col-xl-8">
+                                    <div class="causes-item__action justify-content-end">
+
+                                        <a class="causes-item__link" href="#">Donate</a>
+                                    </div>
+                                    <div class="causes-item__top">
+                                        <h6 class="causes-item__title">
+                                            <a href="#">Farming Education Program</a></h6>
+                                        <p>
+                                            We believe that with enough education on modern farming techniques,
+                                            we can help reduce the risk of hunger in Kenya. Help us offer these
+                                            skills for free!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
