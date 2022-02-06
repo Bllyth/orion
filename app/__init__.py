@@ -56,4 +56,4 @@ def get_locale():
     return request.accept_languages.best_match(Config.LANGUAGES.keys())
 
 
-from app import models
+# from app import models
